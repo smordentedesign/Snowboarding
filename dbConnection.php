@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "root";
+$password = "pt5NINULjO";
 $dbname = "Snowboarding";
 
 //create new connection

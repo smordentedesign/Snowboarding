@@ -40,7 +40,7 @@ VALUES('$state', '$mountain', '$elevation')";
 			<?php
 
 				if ($conn->query($sql) === TRUE) {
-					echo "<h1>New record created successfully</h1><br>";
+					echo "<h1>New mountain added successfully</h1><br>";
 				} else {
 					echo "Error: " . $sql . "<br>" . $conn->error;
 				}
@@ -48,8 +48,9 @@ VALUES('$state', '$mountain', '$elevation')";
 				$conn->close();
 			?>
 
+			<button type="button" class="btn btn-success"><a href="TrailForm.php">Add a Trail</a></button>
 
-			<a href="index.php">Back to Index</a>
+			<button type="button" class="btn btn-warning"><a href="index.php">Back to Index</a></button>
 
 			</div> <!--starter template-->
 		</div> <!--container-->

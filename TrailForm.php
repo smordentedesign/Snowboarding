@@ -40,13 +40,13 @@ if (isset($_GET['trail_id'])){
       
       <div class="starter-template">
       
-      <form action="addtrail.php" method="post">
-          <h2>Add/Update Trail</h2>
+      <form action="addTrail.php" method="post">
+          <h2 style="color:#fff;">Add/Update Trail</h2>
           <?php if(isset($trail_id)) echo "<input type='hidden' name='trail_id' value=" . $trail_id .">"; ?>
           
 
           <div>
-            <label for="mountain_id">Mountain: </label>
+            <label for="mountain_id" style="color:#fff;">Mountain: </label>
             <select name="mountain_id">
             <?php
               if ($mountains->num_rows > 0){
@@ -62,15 +62,15 @@ if (isset($_GET['trail_id'])){
           </div>
         
           <div>
-              <label>Trail Name: </label>
+              <label style="color:#fff;">Trail Name: </label>
               <input type="text" required id="trail" name="Trail_Name" placeholder="trail name" <?php if (isset($trail['Trail_Name'])) echo "value='" . $trail['Trail_Name'] . "'"; ?> />
           </div>
 
 
 
           <div class="button">
-              <button type="submit">Add!</button>
-              <button><a href="index.php">Back</a></button>
+              <button type="submit" class="btn btn-success">Add!</button>
+              <button type="button" class="btn btn-warning"><a href="index.php">Back</a></button>
 
           </div>
       </form>

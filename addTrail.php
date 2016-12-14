@@ -46,7 +46,7 @@ if (isset($_POST['trail_id']))
 
 			<?php
 			if($conn->query($sql) === TRUE) {
-				echo "<h1>Success!</h1> <br>";
+				echo "<h1>Success! Your trail has been added</h1> <br>";
 			}else {
 				echo "Error: " . $sql . "<br>" . $conn->error;
 
@@ -59,7 +59,7 @@ if (isset($_POST['trail_id']))
 			<h3><u>Trail:</u> <?php echo $trail ?><br></h3>
 
 			<div class="button">
-			<button><a href="index.php">Back to Index</a></button>
+			<button type="button" class="btn btn-warning"><a href="index.php">Back to Index</a></button>
 			</div>
 
 			</div>
